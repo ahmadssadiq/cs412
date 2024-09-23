@@ -1,8 +1,8 @@
 {
     "buildCommand": "pip install -r requirements.txt && python manage.py collectstatic --noinput",
     "functions": {
-        "cs412/wsgi.py": {
-            "runtime": "@vercel/python@1.0.0"
+        "api/wsgi.py": {
+            "runtime": "@vercel/python@3.9"
         }
     },
     "routes": [
@@ -12,7 +12,7 @@
         },
         {
             "src": "/(.*)",
-            "dest": "cs412/wsgi.py"
+            "dest": "/api/wsgi.py"
         }
     ]
 }
