@@ -5,9 +5,9 @@
             "use": "@vercel/python"
         }
     ],
-    "buildCommand": "pip install -r requirements.txt && python manage.py collectstatic --noinput",
+    "buildCommand": "pip install -r ./requirements.txt && python manage.py collectstatic --noinput",
     "routes": [
-        {
+        {   
             "src": "/static/(.*)",
             "dest": "/static/$1"
         },
