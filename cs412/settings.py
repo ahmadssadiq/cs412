@@ -67,7 +67,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "cs412.wsgi.application"
+WSGI_APPLICATION = "cs412.wsgi.app"
 
 
 # Database
