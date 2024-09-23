@@ -1,17 +1,17 @@
 from django.shortcuts import render
 import random
 
-# List of quotes and corresponding image URLs (hard-coded)
+# List of Muhammad Ali's quotes and corresponding image URLs (hard-coded)
 quotes = [
-    "The only limit to our realization of tomorrow is our doubts of today.",
-    "The future belongs to those who believe in the beauty of their dreams.",
-    "Do not watch the clock; do what it does. Keep going.",
+    "Don’t count the days; make the days count.",
+    "He who is not courageous enough to take risks will accomplish nothing in life.",
+    "Service to others is the rent you pay for your room here on earth.",
 ]
 
 images = [
-    "/static/img/person1.jpg",  # Replace with actual image path
-    "/static/img/person2.jpg",
-    "/static/img/person3.jpg",
+    "/static/img/ali1.jpg",  # Replace with actual image path of Muhammad Ali
+    "/static/img/ali2.jpg",
+    "/static/img/ali3.jpg",
 ]
 
 
