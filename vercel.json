@@ -1,18 +1,19 @@
 {
-    "buildCommand": "pip install -r requirements.txt && python manage.py collectstatic --noinput",
-    "functions": {
-        "api/wsgi.py": {
-            "runtime": "@vercel/python3.9"
+    "builds": [
+        {
+            "src": "api/wsgi.py",
+            "use": "@vercel/python"
         }
-    },
+    ],
+    "buildCommand": "pip install -r ./requirements.txt && python manage.py collectstatic --noinput",
     "routes": [
         {
             "src": "/static/(.*)",
-            "dest": "/staticfiles/$1"
+            "dest": "/staticfile/$1"
         },
         {
             "src": "/(.*)",
-            "dest": "/api/wsgi.py"
+            "dest": "api/wsgi.py"
         }
     ]
 }
