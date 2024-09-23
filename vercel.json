@@ -2,7 +2,7 @@
     "buildCommand": "pip install -r requirements.txt && python manage.py collectstatic --noinput",
     "functions": {
         "api/wsgi.py": {
-            "runtime": "@vercel/python"
+            "runtime": "@vercel/python3.9"
         }
     },
     "routes": [
